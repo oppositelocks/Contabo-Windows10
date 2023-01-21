@@ -2,30 +2,30 @@
 Installing Windows 10 on a Contabo VPS for dummies
 
 DISCLAIMER:
-  You are accepting all risk associated with the installation of Windows on your Contabo vps and the activation method listed as part of these instructions.
+- You are accepting all risk associated with the installation of Windows on your Contabo vps and the activation method listed as part of these instructions.
 
 Prerequisites:
-  A VNC app installed on a computer, tablet, or even your phone.  Search for "VNC Viewer"
-  A vps with Contabo (obviously)
-  Micorsoft's Remote Desktop App.  Search for "Remote Desktop" and download the one that's published by Microsoft.
+- A VNC app installed on a computer, tablet, or even your phone.  Search for "VNC Viewer"
+- A vps with Contabo (obviously)
+- Micorsoft's Remote Desktop App.  Search for "Remote Desktop" and download the one that's published by Microsoft.
   
 Put your vps into recovery mode by doing the following from the the My Services section of the user panel:
-  Click the blue "Manage" button and select "Rescue System"
-  Once the page loads select Clonezilla-live from the "Rescue System Version" dropdown menu.
-  Enter a password
-  Click "Start Rescues System"
+- Click the blue "Manage" button and select "Rescue System"
+- Once the page loads select Clonezilla-live from the "Rescue System Version" dropdown menu.
+- Enter a password
+- Click "Start Rescues System"
 
 Connect to the vps via VNC:
-  On the page that loads when you do the previous steps click the blue "Manage" button.
-  Select "VNC Information" and note the IP address and port and close the window.
-  Click the blue "Manage" button again and select "VNC Password"
-    Generate a password and note it somewhere.
-  Open your VNC app of choice and create a new connection.
-    The address will be in the format of ipaddress:port
+- On the page that loads when you do the previous steps click the blue "Manage" button.
+- Select "VNC Information" and note the IP address and port and close the window.
+- Click the blue "Manage" button again and select "VNC Password"
+  - Generate a password and note it somewhere.
+- Open your VNC app of choice and create a new connection.
+  - The address will be in the format of ipaddress:port
   
 Load Windows via the rescue system:
-  Select "Enter shell command" from the menu
-  Type the following and press enter:
+- Select "Enter shell command" from the menu
+- Type the following and press enter:
     `su && wget -O- "https://drive.google.com/file/d/1npbdkJb0XevuyICx_E58JuRiAQeUTooa/view?usp=sharing" | gunzip | dd of=/dev/sda`
       You will be prompted for a password.  The password is the one you enterred when putting the vps into recovery mode.
       Additionally, this step may take some time so be patient.
