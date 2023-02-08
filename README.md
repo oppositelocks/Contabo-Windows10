@@ -1,5 +1,5 @@
 # Contabo-Windows10
-##Installing Windows 10 on a Contabo VPS for dummies
+## Installing Windows 10 on a Contabo VPS for dummies
 
 DISCLAIMER:
 - You are accepting all risk associated with the installation of Windows on your Contabo vps and the activation method listed as part of these instructions.
