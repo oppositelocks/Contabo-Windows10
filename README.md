@@ -26,8 +26,7 @@ Connect to the vps via VNC:
 Load Windows via the rescue system:
 - Select "Enter shell command" from the menu
 - Type the following and press enter:
-  - ``` bash
-  su && wget -O- "https://drive.google.com/file/d/1npbdkJb0XevuyICx_E58JuRiAQeUTooa/view?usp=sharing" | gunzip | dd of=/dev/sda ```
+  - ``` bash su && wget -O- "https://drive.google.com/file/d/1npbdkJb0XevuyICx_E58JuRiAQeUTooa/view?usp=sharing" | gunzip | dd of=/dev/sda ```
     - You will be prompted for a password.  The password is the one you enterred when putting the vps into recovery mode.
        - Additionally, this step may take some time so be patient.
 - Once the above completes type `reboot`
