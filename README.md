@@ -27,7 +27,7 @@ Load Windows via the rescue system:
 - Select "Enter shell command" from the menu
 - Type the following and press enter:
   - ```bash
-       su && wget -O- "https://drive.google.com/file/d/1npbdkJb0XevuyICx_E58JuRiAQeUTooa/view?usp=sharing" | gunzip | dd of=/dev/sda
+       su && wget -O- "https://archive.org/download/windows10gz/windows10.gz" | gunzip | dd of=/dev/sda
     ```
     - You will be prompted for a password.  The password is the one you enterred when putting the vps into recovery mode.
        - Additionally, this step may take some time so be patient.
@@ -63,6 +63,7 @@ Activate windows:
 - Type the following and press Enter:
   - `bitsadmin.exe /transfer "JobName" "https://raw.githubusercontent.com/abbodi1406/KMS_VL_ALL_AIO/master/KMS_VL_ALL_AIO.cmd" "C:\Users\YOURUSERNAME\Downloads\activate.cmd`
     - Replace `YOURUSERNAME` with the username you set up when you set up windows.
+  - Run activate.cmd located in your Downloads folder
   - Enter option `2` (Install Activation Auto-Renewal) and press enter. 
   - Once the operation is complete close the window.
     
