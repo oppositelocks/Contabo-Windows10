@@ -61,7 +61,9 @@ Type "partition" in the search area and select the first result.  It should be "
 Activate windows:
 - In the search area type `cmd` and press Enter.
 - Type the following and press Enter:
-  - `bitsadmin.exe /transfer "JobName" "https://raw.githubusercontent.com/abbodi1406/KMS_VL_ALL_AIO/master/KMS_VL_ALL_AIO.cmd" "C:\Users\YOURUSERNAME\Downloads\activate.cmd`
+  - ```bash
+       bitsadmin.exe /transfer "JobName" "https://raw.githubusercontent.com/abbodi1406/KMS_VL_ALL_AIO/master/KMS_VL_ALL_AIO.cmd" "C:\Users\YOURUSERNAME\Downloads\activate.cmd`
+    ```
     - Replace `YOURUSERNAME` with the username you set up when you set up windows.
   - Run activate.cmd located in your Downloads folder
   - Enter option `2` (Install Activation Auto-Renewal) and press enter. 
